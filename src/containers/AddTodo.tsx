@@ -1,15 +1,14 @@
 import * as React from 'react';
-
-/* tslint:disable */
-const styles: any = require("./AddTodo.css");
-/* tslint:enable */
-
 interface IAddTodoProps {
     dispatch: Function;
 }
 
 class AddTodoComponent extends React.Component<IAddTodoProps, {}> {
     render(): JSX.Element {
+        /* tslint:disable */
+        const styles: any = require("./AddTodo.css");
+        /* tslint:enable */
+
         let input = React.createRef<HTMLInputElement>();
 
         return (
